@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<a asp-page-handler="ProductWithoutCaching">Product Without Caching</a>
+<a asp-page-handler="ProductWithoutCaching">Product With Distributed Cache</a>
+<h3 class="display-4">@Model.TimeQuery</h3>
+
+@if (Model.Product != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Data Value
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Product)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataValue)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

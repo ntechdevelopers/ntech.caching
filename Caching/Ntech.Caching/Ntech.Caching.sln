@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptSeedData", "ScriptSeedData", "{717315B5-616B-4A22-8CAE-8F60D632E99C}"
+	ProjectSection(SolutionItems) = preProject
+		seed.sql = seed.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ntech.Caching.MemoryCache", "Ntech.Caching.MemoryCache\Ntech.Caching.MemoryCache.csproj", "{235C43EF-D751-4707-8971-B8220627F404}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{1550950A-8915-4C79-BBA8-59E2FE81C29E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Working\JMS\src\docker-compose.override.yml = ..\..\..\..\Working\JMS\src\docker-compose.override.yml
+		..\..\..\..\Working\JMS\src\docker-compose.yml = ..\..\..\..\Working\JMS\src\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ntech.Caching.DistributedCache", "Ntech.Caching.DistributedCache\Ntech.Caching.DistributedCache.csproj", "{B14F3A09-189A-40C7-8210-DE438EE0BF87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tool", "Tool", "{19CA0663-7438-4263-9322-B57BC96CF7CC}"
+	ProjectSection(SolutionItems) = preProject
+		..\Tool\redis-desktop-manager.zip = ..\Tool\redis-desktop-manager.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{235C43EF-D751-4707-8971-B8220627F404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235C43EF-D751-4707-8971-B8220627F404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235C43EF-D751-4707-8971-B8220627F404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235C43EF-D751-4707-8971-B8220627F404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14F3A09-189A-40C7-8210-DE438EE0BF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14F3A09-189A-40C7-8210-DE438EE0BF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14F3A09-189A-40C7-8210-DE438EE0BF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14F3A09-189A-40C7-8210-DE438EE0BF87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE2DE616-3461-48DB-AD2E-17D9770A368F}
+	EndGlobalSection
+EndGlobal
