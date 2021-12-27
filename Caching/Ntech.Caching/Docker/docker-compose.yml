@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+   sqlserver:
+     image: "mcr.microsoft.com/mssql/server"
+     container_name: sqlserver
+     volumes:
+       - sqlserver-data
+     networks:
+       - ntech
+
+   redis:
+     image: redis
+     container_name: redis
+     networks:
+       - ntech-network
+
+volumes:
+  sqlserver-data:
+  mysql-data:
+
+networks:
+  ntech:
+    name: ntech-network

@@ -12,8 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ntech.Caching.MemoryCache",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{1550950A-8915-4C79-BBA8-59E2FE81C29E}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Working\JMS\src\docker-compose.override.yml = ..\..\..\..\Working\JMS\src\docker-compose.override.yml
-		..\..\..\..\Working\JMS\src\docker-compose.yml = ..\..\..\..\Working\JMS\src\docker-compose.yml
+		Docker\docker-compose.override.yml = Docker\docker-compose.override.yml
+		Docker\docker-compose.yml = Docker\docker-compose.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ntech.Caching.DistributedCache", "Ntech.Caching.DistributedCache\Ntech.Caching.DistributedCache.csproj", "{B14F3A09-189A-40C7-8210-DE438EE0BF87}"
